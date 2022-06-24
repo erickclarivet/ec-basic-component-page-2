@@ -1,8 +1,9 @@
 body {
+    min-width: 100vw;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     background-color: hsl(233, 47%, 7%);
     font-family: "Lexend Deca", sans-serif;
     color: white;
@@ -12,8 +13,7 @@ main {
     border-radius: 5px;
     margin: 30px 30px;
     display: flex;
-    width: 75%;
-    flex: 1 1 75%;
+    width: 60%;
     align-items: center;
     background-color:hsl(244, 38%, 16%);
 }
@@ -24,14 +24,8 @@ h1 {
 }
 
 header {
-    width:38%;
+    flex: 1 0 40%;
     margin: 0 5%;
-}
-
-footer {
-    margin-top: 3rem;
-    font-size: 12px;
-    font-family: "Lexend Deca", sans-serif;
 }
 
 .stats {
@@ -51,14 +45,16 @@ p {
 }
 
 .image {
-    flex: 1 0;
+    flex: 1 0 55%;
     width: 50%;
 }
 
 .image > img {
     filter: brightness(50%) sepia(40%) hue-rotate(246deg) saturate(600%) contrast(0.7);
     display: block;
-    width: 100%;
+    max-width: 100%;
+    height: auto;
+    width: auto\9;
     border-radius: 0 5px 5px 0;
 }
 
@@ -101,9 +97,5 @@ p {
 
     .image > img {
         border-radius: 5px 5px 0 0;
-    }
-
-    footer {
-        margin-top : 0.5rem;
     }
 }
